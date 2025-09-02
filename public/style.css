@@ -1,0 +1,95 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  height: 50px;
+  background-color: rgba(0, 106, 255, 0.942);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav > ul {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 50px;
+  list-style: none;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.tdl {
+  border: 10px solid blanchedalmond;
+  height: auto;             
+  max-width: 90vw;          
+  width: 500px;             
+  display: grid;
+  align-items: center;
+  margin: 150px auto 0 auto;
+  border-radius: 30px;
+  color: antiquewhite;
+  padding: 20px;            
+}
+
+#task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;          
+}
+
+form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid bisque;
+  min-width: 0;             
+}
+
+button {
+  padding: 10px 15px;
+  background-color: rgba(0, 106, 255, 0.9);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 106, 255, 1);
+}
+
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: black; 
+  color: white;
+}
